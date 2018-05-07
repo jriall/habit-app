@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
@@ -11,7 +13,7 @@ const Wrapper = styled.section`
   height: 100%;
 `;
 
-class App extends Component {
+class App extends Component<*> {
   render() {
     return (
       <Wrapper>
