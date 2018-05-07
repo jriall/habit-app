@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import './App.css';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+const Wrapper = styled.section`
+  height: 100%;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>This is my Habit App</h1>
-      </div>
+      <Wrapper>
+        <Title>This is my Habit App</Title>
+      </Wrapper>
     );
   }
 }

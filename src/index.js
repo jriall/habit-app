@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import baseStyles from './styles/index'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const render = () => {
+  baseStyles()
+
+  ReactDOM.render(<App />, document.getElementById('root'))
+}
+render();
 registerServiceWorker();
