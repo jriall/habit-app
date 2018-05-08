@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import baseStyles from './styles/index'
+import baseStyles from './styles/index';
 
 const render = () => {
-  baseStyles()
+  baseStyles();
+  ReactDOM.render(<App />, document.getElementById('root'));
+};
 
-  ReactDOM.render(<App />, document.getElementById('root'))
-}
 render();
 registerServiceWorker();
